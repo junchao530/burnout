@@ -1,0 +1,7 @@
+set(car_controller_SETUP_PY_SETUP_MODULE "distutils.core")
+set(car_controller_SETUP_PY_VERSION "0.0.0")
+set(car_controller_SETUP_PY_SCRIPTS "")
+set(car_controller_SETUP_PY_PACKAGES "car_controller")
+set(car_controller_SETUP_PY_PACKAGE_DIRS "src/car_controller")
+set(car_controller_SETUP_PY_MODULES "")
+set(car_controller_SETUP_PY_MODULE_DIRS "")

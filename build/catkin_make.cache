@@ -1,0 +1,2 @@
+car_controller:car_core:car_description
+-DCATKIN_DEVEL_PREFIX=/home/jun/learn_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jun/learn_ws/install -G Unix Makefiles

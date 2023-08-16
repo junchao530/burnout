@@ -1,0 +1,20 @@
+<launch>
+<arg name="model" default="$(find car_description)/urdf/car.urdf.xacro"/>
+<arg name="world" default="empty_world"/>
+
+<param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)"/>
+
+<include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <argv name="paused" value="false"/>
+    <argv name="use_sim_time" value="true"/>
+    <argv name="gui" value="true"/>
+    <argv name="headless" value="false"/>
+    <argv name="debug" value="false"/>
+    <argv name="wolrd_name" value="$(arg world)"/>
+</include>
+
+<node pkg="gazebo_ros" type="spawn_model" name="spawn_model"
+    args="-unpause -urdf -model robot -param robot_description"
+    output="screen" respawn="false"/>
+</launch>
+
